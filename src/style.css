@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8;
+    /* 背景固定 */
+    background-attachment: fixed;
+    /* 弹性布局 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+h1 {
+    margin: 0.2rem;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+    margin: 1.2rem 0;
+    letter-spacing: 0.1rem;
+}
+
+a {
+    color:aqua;
+    font-size: 1rem;
+    /* 下划线消失 */
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    padding: 2rem;
+    width: 50rem;
+    height: 35rem;
+    overflow : hidden;
+    max-width: 100vw;
+    min-height: 70vh;
+}
+
+.form_container form {
+    background-color: #fff;
+    /* 弹性布局 */
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.8rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container input {
+    width: 100%;
+    height: 2.2rem;
+    text-indent: 1rem;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    /* 点击input边框消失 */
+    outline: none;
+    margin: 0.6rem 0;
+}
+
+.form_container button:active {
+    transform: scale(0.95, 0.95);
+}
+
+.form_container button {
+    padding: 0.4rem 1rem;
+    background-color: #417dff;
+    color: white;
+    border: 1px solid #fff;
+    outline: none;
+    /* 点击鼠标指针变手 */
+    cursor: pointer;
+    width: 5rem;
+    border-radius: 8px;
+    transition: all 100mx ease-in;
+    margin: 0.6rem 0;
+    font-size: 0.6rem;
+    padding: 0.5rem 0;
+}
+
+button#send_code {
+    width: 100%;
+}
+
+button.ghost {
+    background: transparent;
+    border-color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+    width: 5rem;
+    border-radius: 8px;
+    transition: all 800ms ease-in;
+    margin: 0.6rem 0;
+    padding: 0.5rem 0;
+    color: white;
+    font-size: 0.6rem;
+}
+
+button.ghost:active {
+    transform: scale(0.95, 0.95);
+}
+
+.form_container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 500ms ease-in;
+}
+
+.sign_up_container {
+    left:  0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.login_in_container {
+    left:  0;
+    width: 50%;
+    z-index: 2;
+}
+
+.overlay {
+    background: #417dff;
+    width: 200%;
+    height: 100%;
+    position: relative;
+    left: -100%;
+    transition: all 0.6s ease-in-out;
+    color: white;
+}
+
+.overlay_container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    z-index: 99;
+}
+
+.overlay_transiation {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    padding: 0 2.2rem;
+}
+
+.overlay_right {
+    right: 0;
+}
+
+.container.right_transiation_active .overlay_container {
+    transform: translateX(-100%);
+}
+
+.container.right_transiation_active .login_in_container {
+    transform: translateX(100%);
+}
+
+.container.right_transiation_active .sign_up_container {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    transition: all 0.6s ease-in-out;
+}
+
+.container.right_transiation_active .overlay {
+    transform: translateX(50%);
+}
+
+.container.right_transiation_active .overlay_left {
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.right_transiation_active .overlay_right {
+    transform: translateX(20%);
+    transition: all 0.6s ease-in-out;
+}

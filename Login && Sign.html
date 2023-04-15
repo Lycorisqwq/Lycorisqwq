@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login && Sign</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class = "container" id = "container">
+        <!-- 注册 -->
+        <div class = "form_container sign_up_container">
+            <form action = "#">
+                <h1>用户注册</h1>
+                <input type="text" placeholder = "用户名">
+                <input type="password" placeholder = "密码">
+                <input type="email" placeholder = "邮箱">
+                <button id = "send_code">发送验证码</button>
+                <input type="text" placeholder = "验证码">
+                <button>注册</button>
+            </form>
+        </div>
+        <!-- 登陆 -->
+        <div class = "form_container login_in_container">
+            <form action = "#">
+                <h1>用户登陆</h1>
+                <input type="text" placeholder = "用户名">
+                <input type="password" placeholder = "密码">
+                <button>登陆</button>
+            </form>
+        </div>
+        <!-- 侧边栏 -->
+        <div class = "overlay_container">
+            <div class = "overlay">
+                <div class = "overlay_transiation overlay_left">
+                    <h1>已有账号?</h1>
+                    <p>快点击我去进行登陆吧!</p>
+                    <button class = "ghost", id = "Login">登陆</button>
+                </div>
+                <div class = "overlay_transiation overlay_right">
+                    <h1>没有账号?</h1>
+                    <p>快点击我去注册一个吧!</p>
+                    <button class = "ghost", id = "Sign">注册</button>
+                </div>
+            <div>
+        </div>
+    </div>
+</body>
+<script src = "./index.js"></script>
+</html>
