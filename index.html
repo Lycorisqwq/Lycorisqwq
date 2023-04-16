@@ -5,7 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login && Sign</title>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src = "./js/Bmob-2.4.0.min.js"></script>
+    <script>
+        Bmob.initialize("83f1411ff91fab7d", "000000");
+        Bmob.debug(true);
+        function register() {
+            let params = {
+                username: document.getElementById("username").value,
+                password: document.getElementById("password").value,
+                // email: 'bmob2018@bmobapp.com',
+            }
+            Bmob.User.register(params).then(res => {
+                location.href = "index.html";
+            }).catch(err => {
+                alert(err.error);
+            });
+        }
+        function login() {
+            Bmob.User.login(document.getElementById("uname").value, document.getElementById("pword").value).then(res => {
+                location.href = "https://cecilia-casrana.github.io/Cecilia-Casrana.io/";
+            }).catch(err => {
+                alert(err.error);
+            });
+        }
+    </script>
 </head>
 <body>
     <div class = "container" id = "container">
@@ -13,21 +37,21 @@
         <div class = "form_container sign_up_container">
             <form action = "#">
                 <h1>用户注册</h1>
-                <input type="text" placeholder = "用户名">
-                <input type="password" placeholder = "密码">
+                <input type="text" id = "username" placeholder = "用户名">
+                <input type="password" id = "password" placeholder = "密码">
                 <input type="email" placeholder = "邮箱">
                 <button id = "send_code">发送验证码</button>
                 <input type="text" placeholder = "验证码">
-                <button>注册</button>
+                <button onclick = "register()">注册</button>
             </form>
         </div>
         <!-- 登陆 -->
         <div class = "form_container login_in_container">
             <form action = "#">
                 <h1>用户登陆</h1>
-                <input type="text" placeholder = "用户名">
-                <input type="password" placeholder = "密码">
-                <button>登陆</button>
+                <input type="text" id = "uname" placeholder = "用户名">
+                <input type="password" id = "pword" placeholder = "密码">
+                <button onclick = "login()">登陆</button>
             </form>
         </div>
         <!-- 侧边栏 -->
@@ -46,6 +70,7 @@
             <div>
         </div>
     </div>
+<script src = "./js/index.js"></script>
 </body>
-<script src = "./index.js"></script>
 </html>
+        
