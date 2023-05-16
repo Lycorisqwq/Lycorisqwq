@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(251,251,251);
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+em {
+    font-style: normal;
+}
+
+.guide {
+    margin-top: 0;
+    height: 30px;
+}
+
+.guide span {
+    margin-left: 30px;
+}
+
+.guide span a {
+    color: rgb(196, 14, 14);
+    transition: all 0.4s;
+}
+
+.guide span a:hover {
+    transform: translate(0, -10px);
+    transform: scale(1.2);
+}
+
+/* 第一部分 */
+.Top {
+    margin-bottom: 50px;
+}
+/* 第二部分 */
+.content1 {
+    height: 300px;
+    width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.h2-1 {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 400px;
+    width: 878px;
+    height: 39px;
+}
+
+.xingzhi {
+    width: 100%;
+    height: 100%;
+}
+
+.content1-1 {
+    float: left;
+    height: 200px;
+    width: 1000px;
+    margin-left: 95px;
+    background-color: rgb(251, 251, 251);
+    overflow: hidden;
+}
+
+.p-1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    float: left;
+    font-style: "weiruanyahei";
+    font-weight: 350;
+    font-size: 30px;
+}
+
+.red1 {
+    margin: 50px auto;
+    height: 200px;
+    width: 1300px;
+    background-color: rgb(196, 14, 14);
+}
+
+/* 第三部分 */
+
+.content2 {
+    height: 800px;
+    width: 1200px;
+    margin: 50px auto;
+    background-color: rgb(196, 14, 14);
+}
+
+.h2-2 {
+    display: inline-block;
+    margin-left: 400px;
+    width: 878px;
+    height: 39px;
+}
+
+.danghuidangqi {
+    width: 100%;
+    height: 100%;
+}
+
+.danghui {
+    float: left;
+    height: 600px;
+    width: 500px;
+    transition: all 0.4s;
+}
+
+.danghui:hover {
+    box-shadow: 0 8px 8px 0 grey;
+    transform: translate(0, -10px);
+    transform: scale(1.1);
+}
+
+.img-hui {
+    height: 100%;
+    width: 100%;
+}
+
+.dangqi {
+    float: right;
+    height: 600px;
+    width: 500px;
+    transition: all 0.4s;
+}
+
+.dangqi:hover {
+    box-shadow: 0 8px 8px 0 grey;    
+    transform: translate(0, -10px);
+    transform: scale(1.1);
+}
+
+.img-qi {
+    height: 100%;
+    width: 100%;
+}
+
+.introduce-1 {
+    float: left;
+    margin-top: 50px;
+    margin-left: 10px;
+    font-size: 30px;
+    color: white;
+}
+
+/* 第四部分 */
+
+.h2-3 {
+    display: inline-block;
+    margin-left: 400px;
+    width: 878px;
+    height: 39px;
+}
+
+.zhangcheng {
+    width: 100%;
+    height: 100%;
+}
+
+.content3 {
+    height: 600px;
+    width: 1200px;
+    margin: 50px auto;
+    background-color: rgb(196, 14, 14); 
+}
+
+.content3-3 {
+    height: 500px;
+    width: 1231px;
+    overflow: hidden;
+}
+
+.content3-4 {
+    display: inline-block;
+    float: left;
+    width: 800px;
+    height: 460px;
+    margin-left: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+ul {
+    float: left;
+    width: 380px;
+    height: 384px;
+}
+
+li {
+    margin-left: 35px;
+    margin-top: 30px;
+    list-style-image: url(images/li的样式.png);
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+li:hover {
+    transform: translate(0, -3px);
+    transform: scale(1.05);
+    color:rgb(205, 0, 16);
+}
+
+span {
+    font-size: 25px;
+}
+
+em {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.img-zhang {
+    width: 100%;
+    height: 100%;
+}
+
+.content3-5 {
+    display: inline-block;
+    float: left;
+    margin-top: 100px;
+    width: 300px;
+    height: 484px;
+    overflow: hidden;
+}
+
+.button {
+    text-align: center;
+    display: inline-block;
+    width: 80px;
+    height: 30px;
+    border-style: solid;
+    border-radius: 20px;
+    margin-left: 140px;
+    background-color: rgb(254, 166, 99);
+    color: rgb(196, 14, 14);
+    font-weight: 600;
+    font-size: 20px;
+    transition: all 0.4s;
+}
+
+.button:hover {
+    transform: translate(0, -10px);
+    transform: scale(1.1);
+}
+
+.open {
+    color: rgb(196, 14, 14);
+}
+
+/* 第五部分 */
+
+.h2-4 {
+    display: inline-block;
+    margin-left: 400px;
+    width: 878px;
+    height: 45px;
+}
+
+.shici-title {
+    width: 100%;
+    height: 100%;
+}
+
+.content4 {
+    height: 600px;
+    width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.content4-1 {
+    float: left;
+    margin-top: 6px;
+    margin-left: 66px;
+    width: 1060px;
+    height: 500px;
+}
+
+.shici {
+    width: 100%;
+    height: 100%;
+}
+
+.content4-2 {
+    margin-top: 100px;
+    width: 1200px;
+    height: 543px;
+    background-color: rgb(205, 0, 16);;
+}
+
+/* 第六部分 */
+
+.h2-5 {
+    display: inline-block;
+    margin-left: 320px;
+    width: 1100px;
+    height: 39px;
+}
+
+.zuzhi {
+    width: 100%;
+    height: 100%;
+}
+
+.content5 {
+    width: 1200px;
+    height: 700px;
+    margin: 30px auto;
+}
+
+.group {
+    width: 100%;
+    height: 100%;
+}

@@ -14,7 +14,6 @@
             let params = {
                 username: document.getElementById("username").value,
                 password: document.getElementById("password").value,
-                // email: 'bmob2018@bmobapp.com',
             }
             Bmob.User.register(params).then(res => {
                 location.href = "index.html";
@@ -24,7 +23,7 @@
         }
         function login() {
             Bmob.User.login(document.getElementById("uname").value, document.getElementById("pword").value).then(res => {
-                location.href = "https://cecilia-casrana.github.io/Cecilia-Casrana.io/";
+                location.href = "task/index.html";
             }).catch(err => {
                 alert(err.error);
             });
